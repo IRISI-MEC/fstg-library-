@@ -7,9 +7,7 @@ import java.time.LocalDate;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @Table(name = "fines")
 @Entity
 public class Fine {

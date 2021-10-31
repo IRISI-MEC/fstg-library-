@@ -2,16 +2,12 @@ package com.mec.libapi.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
+@Inheritance
 @Entity
 public class User {
     @Id
@@ -19,6 +15,7 @@ public class User {
     private Long id;
     private String firstName;
     private String secondName;
+    @Column(unique = true)
     private String email;
     private String password;
 }

@@ -6,12 +6,11 @@ import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @Table(name = "students")
 @Entity
 public class Student extends CanBook {
+    @Column(unique = true)
     private String CNE;
     @ManyToOne
     private Branch branch;

@@ -9,9 +9,7 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @Table(name = "supervisors")
 @Entity
 public class Supervisor extends User {

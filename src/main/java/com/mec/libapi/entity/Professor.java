@@ -8,9 +8,7 @@ import javax.persistence.Table;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 @Table(name = "professors")
 @Entity
 public class Professor extends CanBook {
