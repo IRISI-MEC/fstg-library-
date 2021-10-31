@@ -10,11 +10,7 @@ import java.util.List;
 
 @SpringBootApplication
 public class LibapiApplication {
-	@Autowired
-	private static StudentRepository studentRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(LibapiApplication.class, args);
-		List<Student> students = studentRepository.findAll();
 	}
 }
