@@ -26,8 +26,6 @@ public class BookingAppointment {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private LocalDate date;
-	@JsonFormat(pattern = "HH:mm:ss")
-	private LocalTime hour;
 //	@ManyToOne
 //	private CanBook canBook;
 //	@ManyToOne

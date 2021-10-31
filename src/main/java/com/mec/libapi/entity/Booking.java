@@ -22,7 +22,8 @@ public class Booking {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private boolean checkout;
+	@JsonFormat(pattern = "HH:mm:ss")
+	private LocalTime hour;
 	private LocalDate returnDate;
 	@OneToOne
 	private BookingAppointment bookingAppointment;
