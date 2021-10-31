@@ -39,6 +39,10 @@ public class Instance {
     @JoinColumn(name = "book_id")
     private Book book;
 
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "num_case")
+    private NCase nCase;
+
     //STOPSHIP
 
 }

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "specialities")
@@ -21,5 +22,8 @@ public class Speciality {
 
     @Column(unique = true)
     private String label;
+
+    @OneToMany(mappedBy = "speciality")
+    private List<Book> books;
 
 }

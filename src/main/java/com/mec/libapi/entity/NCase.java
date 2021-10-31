@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "num_cases")
@@ -21,5 +22,8 @@ public class NCase {
 
     @Column(unique = true)
     private String code;
+
+    @OneToMany(mappedBy = "nCase")
+    private List<Instance> instances;
 
 }

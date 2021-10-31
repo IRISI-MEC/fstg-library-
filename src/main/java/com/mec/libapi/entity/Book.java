@@ -30,6 +30,10 @@ public class Book {
     @OneToMany(mappedBy = "book")
     private List<Instance> instances;
 
+    @ManyToOne()
+    @JoinColumn(name = "speciality")
+    private Speciality speciality;
+
     //STOPSHIP
 
 }
