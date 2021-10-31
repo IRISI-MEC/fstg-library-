@@ -7,6 +7,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Table(name = "departments")
 @Entity
 public class Department {

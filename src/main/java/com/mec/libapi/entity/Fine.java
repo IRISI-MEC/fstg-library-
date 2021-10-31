@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Table(name = "fines")
 @Entity
 public class Fine {
@@ -18,9 +19,11 @@ public class Fine {
     private String reason;
     private LocalDate date;
     private Boolean isReturned;
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "supervisor_id")
     private Supervisor supervisor;
-    @ManyToOne
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "user_id")
     private CanBook canBook;
 
 
