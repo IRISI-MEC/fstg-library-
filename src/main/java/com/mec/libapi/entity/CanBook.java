@@ -15,7 +15,7 @@ import java.util.List;
 public class CanBook extends User {
     private Long maxBooking;
     private Boolean overDue;
-    @OneToMany
+    @OneToMany(mappedBy = "canBook")
     private List<Fine> userFines;
 
     // STOPSHIP

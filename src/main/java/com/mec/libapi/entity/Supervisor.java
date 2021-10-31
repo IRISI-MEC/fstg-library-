@@ -13,6 +13,6 @@ import java.util.List;
 @Table(name = "supervisors")
 @Entity
 public class Supervisor extends User {
-    @OneToMany
+    @OneToMany(mappedBy = "supervisor")
     private List<Fine> supervisorFines;
 }
