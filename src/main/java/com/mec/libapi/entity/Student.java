@@ -7,7 +7,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "students")
 @Entity
 public class Student extends CanBook {
     @Column(unique = true)

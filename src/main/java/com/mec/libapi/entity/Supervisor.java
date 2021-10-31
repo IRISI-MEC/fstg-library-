@@ -10,7 +10,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "supervisors")
 @Entity
 public class Supervisor extends User {
     @OneToMany(mappedBy = "supervisor")

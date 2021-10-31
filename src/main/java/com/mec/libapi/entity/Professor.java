@@ -9,7 +9,6 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "professors")
 @Entity
 public class Professor extends CanBook {
     @ManyToOne

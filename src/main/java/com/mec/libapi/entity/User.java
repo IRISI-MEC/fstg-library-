@@ -8,6 +8,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Data
 @Inheritance
+@Table(name = "users")
 @Entity
 public class User {
     @Id
