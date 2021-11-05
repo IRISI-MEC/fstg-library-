@@ -14,12 +14,19 @@ import java.util.stream.Stream;
 public interface InstanceRepository extends JpaRepository<Instance, Long> {
 
     Optional<Instance> findByQrCode(String qrcode);
+
     Optional<Instance> findByInventoryNumber(Long inventoryNumber);
+
     Stream<Instance> findByEditor(String editor);
+
     Stream<Instance> findByEdition(String edition);
+
     Stream<Instance> findByPublishingDate(LocalDate date);
+
     Stream<Instance> findByLanguage(String language);
+
     Stream<Instance> findByBook(Book book);
+
     Stream<Instance> findByNCase(NCase nCase);
 
 }
