@@ -1,42 +1,37 @@
 package com.mec.libapi.serviceImpl.userModule;
 
-import com.mec.libapi.entity.Branch;
+import com.mec.libapi.entity.userModule.Branch;
+import com.mec.libapi.repository.userModule.BranchRepository;
 import com.mec.libapi.service.userModule.BranchService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
 @Service
 public class BranchServiceImpl implements BranchService {
-    @Override
-    public Branch save(Branch branch) {
-        return null;
-    }
+
+    @Autowired
+    private BranchRepository branchRepository;
 
     @Override
-    public List<Branch> saveAll(Iterable<Branch> branches) {
-        return null;
+    public Branch save(Branch branch) {
+        return branchRepository.save(branch);
     }
 
     @Override
     public Optional<Branch> findById(Long id) {
-        return Optional.empty();
+        return branchRepository.findById(id);
     }
 
     @Override
     public Stream<Branch> findAll() {
-        return null;
-    }
-
-    @Override
-    public Branch update(Branch branch) {
-        return null;
+        return branchRepository.findAll().stream();
     }
 
     @Override
     public void delete(Branch branch) {
-
+        branchRepository.delete(branch);
     }
 }
