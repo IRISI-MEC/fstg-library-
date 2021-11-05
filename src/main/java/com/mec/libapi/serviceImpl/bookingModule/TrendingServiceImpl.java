@@ -1,13 +1,11 @@
 package com.mec.libapi.serviceImpl.bookingModule;
 
-import com.mec.libapi.entity.Book;
-import com.mec.libapi.entity.Trending;
-import com.mec.libapi.repository.TrendingRepository;
+import com.mec.libapi.entity.bookingModule.Trending;
+import com.mec.libapi.repository.bookingModule.TrendingRepository;
 import com.mec.libapi.service.bookingModule.TrendingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -20,11 +18,6 @@ public class TrendingServiceImpl implements TrendingService {
     @Override
     public Trending save(Trending trending) {
         return trendingRepository.save(trending);
-    }
-
-    @Override
-    public List<Trending> saveAll(Iterable<Trending> trendings) {
-        return trendingRepository.saveAllAndFlush(trendings);
     }
 
     @Override
@@ -44,7 +37,7 @@ public class TrendingServiceImpl implements TrendingService {
     }
 
     @Override
-    public Optional<Book> findByTrending(boolean trending) {
+    public Optional<Trending> findByTrending(boolean trending) {
         return trendingRepository.findByTrending(trending);
     }
 }

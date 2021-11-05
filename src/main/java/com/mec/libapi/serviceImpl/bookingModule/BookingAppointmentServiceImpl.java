@@ -1,14 +1,12 @@
 package com.mec.libapi.serviceImpl.bookingModule;
 
-import com.mec.libapi.entity.Book;
-import com.mec.libapi.entity.BookingAppointment;
-import com.mec.libapi.repository.BookingAppointmentRepository;
+import com.mec.libapi.entity.bookingModule.BookingAppointment;
+import com.mec.libapi.repository.bookingModule.BookingAppointmentRepository;
 import com.mec.libapi.service.bookingModule.BookingAppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -21,11 +19,6 @@ public class BookingAppointmentServiceImpl implements BookingAppointmentService 
     @Override
     public BookingAppointment save(BookingAppointment bookingAppointment) {
         return bookingAppointmentRepository.save(bookingAppointment);
-    }
-
-    @Override
-    public List<BookingAppointment> saveAll(Iterable<BookingAppointment> bookingAppointments) {
-        return bookingAppointmentRepository.saveAllAndFlush(bookingAppointments);
     }
 
     @Override
@@ -45,7 +38,7 @@ public class BookingAppointmentServiceImpl implements BookingAppointmentService 
     }
 
     @Override
-    public Optional<Book> findByDate(LocalDate date) {
+    public Optional<BookingAppointment> findByDate(LocalDate date) {
         return bookingAppointmentRepository.findByDate(date);
     }
 }

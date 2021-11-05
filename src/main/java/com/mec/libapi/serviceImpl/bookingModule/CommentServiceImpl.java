@@ -1,13 +1,11 @@
 package com.mec.libapi.serviceImpl.bookingModule;
 
-import com.mec.libapi.entity.Book;
-import com.mec.libapi.entity.Comment;
-import com.mec.libapi.repository.CommentRepository;
+import com.mec.libapi.entity.bookingModule.Comment;
+import com.mec.libapi.repository.bookingModule.CommentRepository;
 import com.mec.libapi.service.bookingModule.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -20,11 +18,6 @@ public class CommentServiceImpl implements CommentService {
     @Override
     public Comment save(Comment comment) {
         return commentRepository.save(comment);
-    }
-
-    @Override
-    public List<Comment> saveAll(Iterable<Comment> comments) {
-        return commentRepository.saveAllAndFlush(comments);
     }
 
     @Override
@@ -44,7 +37,7 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public Optional<Book> findByStarsNumber(Integer starsNumber) {
+    public Optional<Comment> findByStarsNumber(Integer starsNumber) {
         return commentRepository.findByStarsNumber(starsNumber);
     }
 }

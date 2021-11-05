@@ -1,6 +1,6 @@
 package com.mec.libapi.service.bookingModule;
 
-import com.mec.libapi.entity.Booking;
+import com.mec.libapi.entity.bookingModule.Booking;
 import com.mec.libapi.service.AbstractService;
 
 import java.time.LocalTime;

@@ -1,13 +1,12 @@
 package com.mec.libapi.serviceImpl.bookingModule;
 
-import com.mec.libapi.entity.Booking;
-import com.mec.libapi.repository.BookingRepository;
+import com.mec.libapi.entity.bookingModule.Booking;
+import com.mec.libapi.repository.bookingModule.BookingRepository;
 import com.mec.libapi.service.bookingModule.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalTime;
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -20,11 +19,6 @@ public class BookingServiceImpl implements BookingService {
     @Override
     public Booking save(Booking booking) {
         return bookingRepository.save(booking);
-    }
-
-    @Override
-    public List<Booking> saveAll(Iterable<Booking> bookings) {
-        return bookingRepository.saveAllAndFlush(bookings);
     }
 
     @Override
