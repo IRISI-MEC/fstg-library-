@@ -1,4 +1,4 @@
-package com.mec.libapi.repository;
+package com.mec.libapi.repository.bookModule;
 
 import com.mec.libapi.entity.bookModule.Speciality;
 import org.springframework.data.jpa.repository.JpaRepository;

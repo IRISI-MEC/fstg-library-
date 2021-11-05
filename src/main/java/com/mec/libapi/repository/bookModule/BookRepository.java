@@ -1,4 +1,4 @@
-package com.mec.libapi.repository;
+package com.mec.libapi.repository.bookModule;
 
 import com.mec.libapi.entity.bookModule.Book;
 import com.mec.libapi.entity.bookModule.Speciality;
@@ -12,8 +12,11 @@ import java.util.stream.Stream;
 public interface BookRepository extends JpaRepository<Book, Long> {
 
     Optional<Book> findByIsbn(String isbn);
+
     Optional<Book> findByTitleContains(String keyword);
+
     Stream<Book> findByAuthor(String author);
+
     Stream<Book> findBySpeciality(Speciality speciality);
 
 }

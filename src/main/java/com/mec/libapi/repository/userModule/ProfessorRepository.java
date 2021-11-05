@@ -1,4 +1,4 @@
-package com.mec.libapi.repository;
+package com.mec.libapi.repository.userModule;
 
 import com.mec.libapi.entity.userModule.Professor;
 import org.springframework.data.jpa.repository.JpaRepository;

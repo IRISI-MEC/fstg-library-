@@ -1,5 +1,6 @@
-package com.mec.libapi.entity;
+package com.mec.libapi.entity.bookModule;
 
+import com.mec.libapi.entity.NCase;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

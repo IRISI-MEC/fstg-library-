@@ -1,7 +1,9 @@
-package com.mec.libapi.entity;
+package com.mec.libapi.entity.userModule;
 
-import com.mec.libapi.entity.userModule.CanBook;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
