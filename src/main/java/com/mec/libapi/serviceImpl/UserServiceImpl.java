@@ -37,15 +37,6 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User update(User user) {
-        Optional<User> fetchedUser = userRepository.findById(user.getId());
-        if (fetchedUser.isPresent()) {
-            return userRepository.save(user);
-        }
-        return null;
-    }
-
-    @Override
     public void delete(User user) {
         userRepository.delete(user);
     }

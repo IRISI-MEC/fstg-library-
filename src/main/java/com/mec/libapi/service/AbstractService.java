@@ -13,7 +13,5 @@ public interface AbstractService<T, ID> {
 
     Stream<T> findAll();
 
-    T update(T t);
-
     void delete(T t);
 }

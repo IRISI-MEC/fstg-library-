@@ -3,11 +3,7 @@ package com.mec.libapi.entity;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -26,10 +22,10 @@ public class BookingAppointment {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private LocalDate date;
-//	@ManyToOne
-//	private CanBook canBook;
-//	@ManyToOne
-//	private Instance i;
+	@ManyToOne
+	private CanBook canBook;
+	@ManyToOne
+	private Instance instance;
 	@OneToOne
 	private Booking booking;
 }
