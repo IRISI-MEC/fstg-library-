@@ -1,5 +1,6 @@
 package com.mec.libapi.entity.userModule;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Builder
 @Inheritance
@@ -21,13 +23,4 @@ public class User {
     @Column(unique = true)
     private String email;
     private String password;
-    @Transient
-    private String type;
-
-    public User(String firstName, String secondName, String email, String password) {
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.email = email;
-        this.password = password;
-    }
 }

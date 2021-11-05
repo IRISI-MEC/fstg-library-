@@ -17,13 +17,13 @@ import java.time.LocalTime;
 @Builder
 public class Booking {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @JsonFormat(pattern = "HH:mm:ss")
-    private LocalTime hour;
-    private LocalDate returnDate;
-    @OneToOne
-    private BookingAppointment bookingAppointment;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@JsonFormat(pattern = "HH:mm:ss")
+	private LocalTime hour;
+	private LocalDate returnDate;
+	@OneToOne
+	private BookingAppointment bookingAppointment;
 
 }
