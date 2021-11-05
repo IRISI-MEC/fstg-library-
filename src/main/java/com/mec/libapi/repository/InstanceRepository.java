@@ -4,11 +4,13 @@ import com.mec.libapi.entity.Book;
 import com.mec.libapi.entity.Instance;
 import com.mec.libapi.entity.NCase;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+@Repository
 public interface InstanceRepository extends JpaRepository<Instance, Long> {
 
     Optional<Instance> findByQrCode(String qrcode);

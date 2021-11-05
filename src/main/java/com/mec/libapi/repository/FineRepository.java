@@ -1,10 +1,9 @@
 package com.mec.libapi.repository;
 
-import com.mec.libapi.entity.Speciality;
+import com.mec.libapi.entity.Fine;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface SpecialityRepository extends JpaRepository<Speciality, Long> {
-
+public interface FineRepository extends JpaRepository<Fine, Long> {
 }
