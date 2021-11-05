@@ -1,6 +1,6 @@
 package com.mec.libapi.repository;
 
-import com.mec.libapi.entity.Detail;
+import com.mec.libapi.entity.bookModule.Detail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

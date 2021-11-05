@@ -1,5 +1,7 @@
-package com.mec.libapi.entity;
+package com.mec.libapi.entity.userModule;
 
+import com.mec.libapi.entity.Fine;
+import com.mec.libapi.entity.User;
 import lombok.*;
 
 import javax.persistence.Entity;
