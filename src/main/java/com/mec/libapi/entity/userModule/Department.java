@@ -1,4 +1,4 @@
-package com.mec.libapi.entity;
+package com.mec.libapi.entity.userModule;
 
 import lombok.*;
 

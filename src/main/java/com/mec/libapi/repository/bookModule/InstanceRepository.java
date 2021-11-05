@@ -1,4 +1,4 @@
-package com.mec.libapi.repository;
+package com.mec.libapi.repository.bookModule;
 
 import com.mec.libapi.entity.bookModule.Book;
 import com.mec.libapi.entity.bookModule.Instance;

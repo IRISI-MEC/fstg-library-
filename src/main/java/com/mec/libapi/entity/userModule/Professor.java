@@ -1,6 +1,5 @@
-package com.mec.libapi.entity;
+package com.mec.libapi.entity.userModule;
 
-import com.mec.libapi.entity.userModule.CanBook;
 import lombok.*;
 
 import javax.persistence.Entity;
