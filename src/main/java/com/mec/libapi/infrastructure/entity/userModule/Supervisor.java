@@ -1,4 +1,4 @@
-package com.mec.libapi.infrastucture.entity.userModule;
+package com.mec.libapi.infrastructure.entity.userModule;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

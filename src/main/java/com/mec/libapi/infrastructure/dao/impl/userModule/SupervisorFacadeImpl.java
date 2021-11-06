@@ -1,8 +1,8 @@
-package com.mec.libapi.infrastucture.dao.impl.userModule;
+package com.mec.libapi.infrastructure.dao.impl.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.Supervisor;
-import com.mec.libapi.infrastucture.dao.repository.userModule.SupervisorRepository;
-import com.mec.libapi.infrastucture.dao.facade.userModule.SupervisorFacade;
+import com.mec.libapi.infrastructure.entity.userModule.Supervisor;
+import com.mec.libapi.infrastructure.dao.repository.userModule.SupervisorRepository;
+import com.mec.libapi.infrastructure.dao.facade.userModule.SupervisorFacade;
 import com.mec.libapi.util.HashUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

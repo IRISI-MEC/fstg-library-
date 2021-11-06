@@ -1,9 +1,9 @@
-package com.mec.libapi.infrastucture.dao.impl.bookModule;
+package com.mec.libapi.infrastructure.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
-import com.mec.libapi.infrastucture.entity.bookModule.SpecialityEntity;
-import com.mec.libapi.infrastucture.dao.repository.bookModule.BookRepository;
-import com.mec.libapi.infrastucture.dao.facade.bookModule.BookFacade;
+import com.mec.libapi.infrastructure.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastructure.entity.bookModule.SpecialityEntity;
+import com.mec.libapi.infrastructure.dao.repository.bookModule.BookRepository;
+import com.mec.libapi.infrastructure.dao.facade.bookModule.BookFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

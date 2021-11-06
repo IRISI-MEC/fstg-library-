@@ -1,10 +1,10 @@
-package com.mec.libapi.infrastucture.dao.impl.bookModule;
+package com.mec.libapi.infrastructure.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
-import com.mec.libapi.infrastucture.entity.bookModule.InstanceEntity;
-import com.mec.libapi.infrastucture.entity.bookModule.NCaseEntity;
-import com.mec.libapi.infrastucture.dao.repository.bookModule.InstanceRepository;
-import com.mec.libapi.infrastucture.dao.facade.bookModule.InstanceFacade;
+import com.mec.libapi.infrastructure.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastructure.entity.bookModule.InstanceEntity;
+import com.mec.libapi.infrastructure.entity.bookModule.NCaseEntity;
+import com.mec.libapi.infrastructure.dao.repository.bookModule.InstanceRepository;
+import com.mec.libapi.infrastructure.dao.facade.bookModule.InstanceFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.LocalDate;

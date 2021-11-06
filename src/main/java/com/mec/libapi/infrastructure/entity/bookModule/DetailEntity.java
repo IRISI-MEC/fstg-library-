@@ -1,4 +1,4 @@
-package com.mec.libapi.infrastucture.entity.bookModule;
+package com.mec.libapi.infrastructure.entity.bookModule;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

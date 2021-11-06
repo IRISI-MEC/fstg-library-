@@ -1,7 +1,7 @@
-package com.mec.libapi.infrastucture.dao.facade.bookingModule;
+package com.mec.libapi.infrastructure.dao.facade.bookingModule;
 
-import com.mec.libapi.infrastucture.entity.bookingModule.Trending;
-import com.mec.libapi.infrastucture.dao.facade.AbstractFacade;
+import com.mec.libapi.infrastructure.entity.bookingModule.Trending;
+import com.mec.libapi.infrastructure.dao.facade.AbstractFacade;
 
 import java.util.Optional;
 

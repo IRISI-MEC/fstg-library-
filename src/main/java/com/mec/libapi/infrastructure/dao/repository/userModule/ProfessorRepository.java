@@ -1,6 +1,6 @@
-package com.mec.libapi.infrastucture.dao.repository.userModule;
+package com.mec.libapi.infrastructure.dao.repository.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.Professor;
+import com.mec.libapi.infrastructure.entity.userModule.Professor;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

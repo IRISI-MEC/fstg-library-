@@ -1,4 +1,4 @@
-package com.mec.libapi.infrastucture.dao.facade;
+package com.mec.libapi.infrastructure.dao.facade;
 
 import java.util.Optional;
 import java.util.stream.Stream;

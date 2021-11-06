@@ -1,8 +1,8 @@
-package com.mec.libapi.infrastucture.dao.impl.userModule;
+package com.mec.libapi.infrastructure.dao.impl.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.Fine;
-import com.mec.libapi.infrastucture.dao.repository.userModule.FineRepository;
-import com.mec.libapi.infrastucture.dao.facade.userModule.FineFacade;
+import com.mec.libapi.infrastructure.entity.userModule.Fine;
+import com.mec.libapi.infrastructure.dao.repository.userModule.FineRepository;
+import com.mec.libapi.infrastructure.dao.facade.userModule.FineFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

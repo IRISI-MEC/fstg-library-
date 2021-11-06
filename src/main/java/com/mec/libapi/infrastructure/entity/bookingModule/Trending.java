@@ -1,7 +1,7 @@
-package com.mec.libapi.infrastucture.entity.bookingModule;
+package com.mec.libapi.infrastructure.entity.bookingModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
-import com.mec.libapi.infrastucture.entity.userModule.CanBook;
+import com.mec.libapi.infrastructure.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastructure.entity.userModule.CanBook;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

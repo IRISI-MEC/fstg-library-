@@ -1,8 +1,8 @@
-package com.mec.libapi.infrastucture.dao.impl.userModule;
+package com.mec.libapi.infrastructure.dao.impl.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.CanBook;
-import com.mec.libapi.infrastucture.dao.repository.userModule.CanBookRepository;
-import com.mec.libapi.infrastucture.dao.facade.userModule.CanBookFacade;
+import com.mec.libapi.infrastructure.entity.userModule.CanBook;
+import com.mec.libapi.infrastructure.dao.repository.userModule.CanBookRepository;
+import com.mec.libapi.infrastructure.dao.facade.userModule.CanBookFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

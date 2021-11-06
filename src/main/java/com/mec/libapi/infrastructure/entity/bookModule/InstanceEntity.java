@@ -1,4 +1,4 @@
-package com.mec.libapi.infrastucture.entity.bookModule;
+package com.mec.libapi.infrastructure.entity.bookModule;
 
 import com.mec.libapi.util.Availability;
 import lombok.AllArgsConstructor;

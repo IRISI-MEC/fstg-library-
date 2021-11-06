@@ -1,8 +1,8 @@
-package com.mec.libapi.infrastucture.dao.impl.bookingModule;
+package com.mec.libapi.infrastructure.dao.impl.bookingModule;
 
-import com.mec.libapi.infrastucture.entity.bookingModule.BookingAppointment;
-import com.mec.libapi.infrastucture.dao.repository.bookingModule.BookingAppointmentRepository;
-import com.mec.libapi.infrastucture.dao.facade.bookingModule.BookingAppointmentFacade;
+import com.mec.libapi.infrastructure.entity.bookingModule.BookingAppointment;
+import com.mec.libapi.infrastructure.dao.repository.bookingModule.BookingAppointmentRepository;
+import com.mec.libapi.infrastructure.dao.facade.bookingModule.BookingAppointmentFacade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

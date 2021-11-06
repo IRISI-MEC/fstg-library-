@@ -1,7 +1,7 @@
-package com.mec.libapi.infrastucture.dao.facade.userModule;
+package com.mec.libapi.infrastructure.dao.facade.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.User;
-import com.mec.libapi.infrastucture.dao.facade.AbstractFacade;
+import com.mec.libapi.infrastructure.entity.userModule.User;
+import com.mec.libapi.infrastructure.dao.facade.AbstractFacade;
 
 import java.util.Optional;
 

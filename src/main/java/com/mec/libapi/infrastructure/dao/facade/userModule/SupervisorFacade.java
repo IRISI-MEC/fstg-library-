@@ -1,7 +1,7 @@
-package com.mec.libapi.infrastucture.dao.facade.userModule;
+package com.mec.libapi.infrastructure.dao.facade.userModule;
 
-import com.mec.libapi.infrastucture.entity.userModule.Supervisor;
-import com.mec.libapi.infrastucture.dao.facade.AbstractFacade;
+import com.mec.libapi.infrastructure.entity.userModule.Supervisor;
+import com.mec.libapi.infrastructure.dao.facade.AbstractFacade;
 
 public interface SupervisorFacade extends AbstractFacade<Supervisor, Long> {
 }

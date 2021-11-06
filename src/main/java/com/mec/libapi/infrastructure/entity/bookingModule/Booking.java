@@ -1,4 +1,4 @@
-package com.mec.libapi.infrastucture.entity.bookingModule;
+package com.mec.libapi.infrastructure.entity.bookingModule;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

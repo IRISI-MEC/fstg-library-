@@ -1,6 +1,6 @@
-package com.mec.libapi.infrastucture.dao.repository.bookingModule;
+package com.mec.libapi.infrastructure.dao.repository.bookingModule;
 
-import com.mec.libapi.infrastucture.entity.bookingModule.Comment;
+import com.mec.libapi.infrastructure.entity.bookingModule.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

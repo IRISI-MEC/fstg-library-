@@ -1,7 +1,7 @@
-package com.mec.libapi.infrastucture.converter.bookModule;
+package com.mec.libapi.infrastructure.converter.bookModule;
 
 import com.mec.libapi.domain.pojo.bookModule.Detail;
-import com.mec.libapi.infrastucture.entity.bookModule.DetailEntity;
+import com.mec.libapi.infrastructure.entity.bookModule.DetailEntity;
 import org.springframework.stereotype.Component;
 
 @Component
