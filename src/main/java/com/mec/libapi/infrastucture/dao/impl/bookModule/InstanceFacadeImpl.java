@@ -1,8 +1,8 @@
 package com.mec.libapi.infrastucture.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Book;
-import com.mec.libapi.infrastucture.entity.bookModule.Instance;
-import com.mec.libapi.infrastucture.entity.bookModule.NCase;
+import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastucture.entity.bookModule.InstanceEntity;
+import com.mec.libapi.infrastucture.entity.bookModule.NCaseEntity;
 import com.mec.libapi.infrastucture.dao.repository.bookModule.InstanceRepository;
 import com.mec.libapi.infrastucture.dao.facade.bookModule.InstanceFacade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,68 +18,68 @@ public class InstanceFacadeImpl implements InstanceFacade {
     private InstanceRepository repository;
 
     @Override
-    public Instance save(Instance instance) {
-        return repository.save(instance);
+    public InstanceEntity save(InstanceEntity instanceEntity) {
+        return repository.save(instanceEntity);
     }
 
     @Override
-    public List<Instance> saveAll(Iterable<Instance> instances) {
+    public List<InstanceEntity> saveAll(Iterable<InstanceEntity> instances) {
         return repository.saveAllAndFlush(instances);
     }
 
     @Override
-    public Optional<Instance> findById(Long id) {
+    public Optional<InstanceEntity> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Stream<Instance> findAll() {
+    public Stream<InstanceEntity> findAll() {
         return repository.findAll().stream();
     }
 
     @Override
-    public void delete(Instance instance) {
-        repository.delete(instance);
+    public void delete(InstanceEntity instanceEntity) {
+        repository.delete(instanceEntity);
     }
 
     @Override
-    public Optional<Instance> findByQrCode(String qrcode) {
+    public Optional<InstanceEntity> findByQrCode(String qrcode) {
         return repository.findByQrCode(qrcode);
     }
 
     @Override
-    public Optional<Instance> findByInventoryNumber(Long inventoryNumber) {
+    public Optional<InstanceEntity> findByInventoryNumber(Long inventoryNumber) {
         return repository.findByInventoryNumber(inventoryNumber);
     }
 
     @Override
-    public Stream<Instance> findByEditor(String editor) {
+    public Stream<InstanceEntity> findByEditor(String editor) {
         return repository.findByEditor(editor);
     }
 
     @Override
-    public Stream<Instance> findByEdition(String edition) {
-        return repository.findByEditor(edition);
+    public Stream<InstanceEntity> findByEdition(String edition) {
+        return repository.findByEdition(edition);
     }
 
     @Override
-    public Stream<Instance> findByPublishingDate(LocalDate date) {
+    public Stream<InstanceEntity> findByPublishingDate(LocalDate date) {
         return repository.findByPublishingDate(date);
     }
 
     @Override
-    public Stream<Instance> findByLanguage(String language) {
+    public Stream<InstanceEntity> findByLanguage(String language) {
         return repository.findByLanguage(language);
     }
 
     @Override
-    public Stream<Instance> findByBook(Book book) {
-        return repository.findByBook(book);
+    public Stream<InstanceEntity> findByBookEntity(BookEntity bookEntity) {
+        return repository.findByBookEntity(bookEntity);
     }
 
     @Override
-    public Stream<Instance> findByNCase(NCase nCase) {
-        return repository.findByNCase(nCase);
+    public Stream<InstanceEntity> findByNCaseEntity(NCaseEntity nCaseEntity) {
+        return repository.findByNCaseEntity(nCaseEntity);
     }
 
 }

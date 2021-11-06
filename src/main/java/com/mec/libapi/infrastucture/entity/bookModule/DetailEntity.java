@@ -6,24 +6,25 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
-@Table(name = "specialities")
+@Table(name = "details")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Speciality {
+public class DetailEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true)
-    private String label;
+    // new, used
+    private String condition;
+    private String buyType;
 
-    @OneToMany(mappedBy = "speciality")
-    private List<Book> books;
+    // library provider
+    private String provider;
+    private String deliverySlip;
 
 }

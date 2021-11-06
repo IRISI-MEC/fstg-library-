@@ -1,6 +1,6 @@
 package com.mec.libapi.infrastucture.entity.bookingModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Book;
+import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
 import com.mec.libapi.infrastucture.entity.userModule.CanBook;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,5 +23,5 @@ public class Comment {
     @ManyToOne
     private CanBook canBook;
     @ManyToOne
-    private Book book;
+    private BookEntity bookEntity;
 }

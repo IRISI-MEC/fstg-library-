@@ -1,6 +1,6 @@
 package com.mec.libapi.infrastucture.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Detail;
+import com.mec.libapi.infrastucture.entity.bookModule.DetailEntity;
 import com.mec.libapi.infrastucture.dao.repository.bookModule.DetailRepository;
 import com.mec.libapi.infrastucture.dao.facade.bookModule.DetailFacade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,27 +14,27 @@ public class DetailFacadeImpl implements DetailFacade {
     private DetailRepository repository;
 
     @Override
-    public Detail save(Detail detail) {
+    public DetailEntity save(DetailEntity detail) {
         return repository.save(detail);
     }
 
     @Override
-    public Optional<Detail> findById(Long id) {
+    public Optional<DetailEntity> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Stream<Detail> findAll() {
+    public Stream<DetailEntity> findAll() {
         return repository.findAll().stream();
     }
 
     @Override
-    public void delete(Detail detail) {
+    public void delete(DetailEntity detail) {
         repository.delete(detail);
     }
 
     @Override
-    public Optional<Detail> findByAllAttributes(String butType, String condition, String dSlip, String provider) {
+    public Optional<DetailEntity> findByAllAttributes(String butType, String condition, String dSlip, String provider) {
         return repository.findByBuyTypeAndConditionAndDeliverySlipAndProvider(butType, condition, dSlip, provider);
     }
 }

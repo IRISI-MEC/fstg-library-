@@ -1,6 +1,6 @@
 package com.mec.libapi.infrastucture.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.NCase;
+import com.mec.libapi.infrastucture.entity.bookModule.NCaseEntity;
 import com.mec.libapi.infrastucture.dao.repository.bookModule.NCaseRepository;
 import com.mec.libapi.infrastucture.dao.facade.bookModule.NCaseFacade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,27 +14,27 @@ public class NCaseFacadeImpl implements NCaseFacade {
     private NCaseRepository repository;
 
     @Override
-    public NCase save(NCase nCase) {
-        return repository.save(nCase);
+    public NCaseEntity save(NCaseEntity nCaseEntity) {
+        return repository.save(nCaseEntity);
     }
 
     @Override
-    public Optional<NCase> findById(Long id) {
+    public Optional<NCaseEntity> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Stream<NCase> findAll() {
+    public Stream<NCaseEntity> findAll() {
         return repository.findAll().stream();
     }
 
     @Override
-    public void delete(NCase nCase) {
-        repository.delete(nCase);
+    public void delete(NCaseEntity nCaseEntity) {
+        repository.delete(nCaseEntity);
     }
 
     @Override
-    public Optional<NCase> findByCode(String code) {
+    public Optional<NCaseEntity> findByCode(String code) {
         return repository.findByCode(code);
     }
 

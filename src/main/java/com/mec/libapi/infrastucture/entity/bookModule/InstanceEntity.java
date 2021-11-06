@@ -1,5 +1,6 @@
 package com.mec.libapi.infrastucture.entity.bookModule;
 
+import com.mec.libapi.util.Availability;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,7 +15,7 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Instance {
+public class InstanceEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,11 +38,15 @@ public class Instance {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "book_id")
-    private Book book;
+    private BookEntity bookEntity;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "num_case")
-    private NCase nCase;
+    private NCaseEntity nCaseEntity;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "details_id")
+    private DetailEntity detailEntity;
 
     //STOPSHIP
 

@@ -1,8 +1,8 @@
 package com.mec.libapi.infrastucture.dao.repository.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Book;
-import com.mec.libapi.infrastucture.entity.bookModule.Instance;
-import com.mec.libapi.infrastucture.entity.bookModule.NCase;
+import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastucture.entity.bookModule.InstanceEntity;
+import com.mec.libapi.infrastucture.entity.bookModule.NCaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,22 +11,22 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 @Repository
-public interface InstanceRepository extends JpaRepository<Instance, Long> {
+public interface InstanceRepository extends JpaRepository<InstanceEntity, Long> {
 
-    Optional<Instance> findByQrCode(String qrcode);
+    Optional<InstanceEntity> findByQrCode(String qrcode);
 
-    Optional<Instance> findByInventoryNumber(Long inventoryNumber);
+    Optional<InstanceEntity> findByInventoryNumber(Long inventoryNumber);
 
-    Stream<Instance> findByEditor(String editor);
+    Stream<InstanceEntity> findByEditor(String editor);
 
-    Stream<Instance> findByEdition(String edition);
+    Stream<InstanceEntity> findByEdition(String edition);
 
-    Stream<Instance> findByPublishingDate(LocalDate date);
+    Stream<InstanceEntity> findByPublishingDate(LocalDate date);
 
-    Stream<Instance> findByLanguage(String language);
+    Stream<InstanceEntity> findByLanguage(String language);
 
-    Stream<Instance> findByBook(Book book);
+    Stream<InstanceEntity> findByBookEntity(BookEntity bookEntity);
 
-    Stream<Instance> findByNCase(NCase nCase);
+    Stream<InstanceEntity> findByNCaseEntity(NCaseEntity nCaseEntity);
 
 }

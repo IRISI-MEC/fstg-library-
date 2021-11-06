@@ -1,7 +1,7 @@
 package com.mec.libapi.infrastucture.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Book;
-import com.mec.libapi.infrastucture.entity.bookModule.Speciality;
+import com.mec.libapi.infrastucture.entity.bookModule.BookEntity;
+import com.mec.libapi.infrastucture.entity.bookModule.SpecialityEntity;
 import com.mec.libapi.infrastucture.dao.repository.bookModule.BookRepository;
 import com.mec.libapi.infrastucture.dao.facade.bookModule.BookFacade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,45 +16,45 @@ public class BookFacadeImpl implements BookFacade {
     private BookRepository repository;
 
     @Override
-    public Book save(Book book) {
-        return repository.save(book);
+    public BookEntity save(BookEntity bookEntity) {
+        return repository.save(bookEntity);
     }
 
     @Override
-    public List<Book> saveAll(Iterable<Book> books) { return repository.saveAllAndFlush(books); }
+    public List<BookEntity> saveAll(Iterable<BookEntity> books) { return repository.saveAllAndFlush(books); }
 
     @Override
-    public Optional<Book> findById(Long id) {
+    public Optional<BookEntity> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Stream<Book> findAll() {
+    public Stream<BookEntity> findAll() {
         return repository.findAll().stream();
     }
 
     @Override
-    public void delete(Book book) {
-        repository.delete(book);
+    public void delete(BookEntity bookEntity) {
+        repository.delete(bookEntity);
     }
 
     @Override
-    public Optional<Book> findByIsbn(String isbn) {
+    public Optional<BookEntity> findByIsbn(String isbn) {
         return repository.findByIsbn(isbn);
     }
 
     @Override
-    public Optional<Book> findByTitleContains(String keyword) {
+    public Optional<BookEntity> findByTitleContains(String keyword) {
         return repository.findByTitleContains(keyword);
     }
 
     @Override
-    public Stream<Book> findByAuthor(String author) {
+    public Stream<BookEntity> findByAuthor(String author) {
         return repository.findByAuthor(author);
     }
 
     @Override
-    public Stream<Book> findBySpeciality(Speciality speciality) {
-        return repository.findBySpeciality(speciality);
+    public Stream<BookEntity> findBySpecialityEntity(SpecialityEntity specialityEntity) {
+        return repository.findBySpecialityEntity(specialityEntity);
     }
 }

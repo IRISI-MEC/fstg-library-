@@ -1,6 +1,6 @@
 package com.mec.libapi.infrastucture.dao.impl.bookModule;
 
-import com.mec.libapi.infrastucture.entity.bookModule.Speciality;
+import com.mec.libapi.infrastucture.entity.bookModule.SpecialityEntity;
 import com.mec.libapi.infrastucture.dao.repository.bookModule.SpecialityRepository;
 import com.mec.libapi.infrastucture.dao.facade.bookModule.SpecialityFacade;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,27 +14,27 @@ public class SpecialityFacadeImpl implements SpecialityFacade {
     private SpecialityRepository repository;
 
     @Override
-    public Speciality save(Speciality speciality) {
-        return repository.save(speciality);
+    public SpecialityEntity save(SpecialityEntity specialityEntity) {
+        return repository.save(specialityEntity);
     }
 
     @Override
-    public Optional<Speciality> findById(Long id) {
+    public Optional<SpecialityEntity> findById(Long id) {
         return repository.findById(id);
     }
 
     @Override
-    public Stream<Speciality> findAll() {
+    public Stream<SpecialityEntity> findAll() {
         return repository.findAll().stream();
     }
 
     @Override
-    public void delete(Speciality speciality) {
-        repository.delete(speciality);
+    public void delete(SpecialityEntity specialityEntity) {
+        repository.delete(specialityEntity);
     }
 
     @Override
-    public Optional<Speciality> findByLabel(String label) {
+    public Optional<SpecialityEntity> findByLabel(String label) {
         return repository.findByLabel(label);
     }
 
